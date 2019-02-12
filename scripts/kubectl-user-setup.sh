@@ -8,5 +8,5 @@ ln -svf /usr/local/etc/kube_config_cluster.yml /home/ubuntu/.kube/config
 ln -svf /usr/local/etc/kube_config_cluster.yml /root/.kube/config
 
 sudo usermod -aG vagrant ubuntu
-sudo usermod -aG ubuntu vagrant
+#sudo usermod -aG ubuntu vagrant
 sudo usermod -aG ubuntu root

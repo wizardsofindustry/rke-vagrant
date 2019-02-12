@@ -6,7 +6,7 @@ if ! kubectl --kubeconfig /usr/local/etc/kube_config_cluster.yml \
       get pods --all-namespaces | grep dashboard; then
   echo '> install kubernetes dashboard'
   kubectl --kubeconfig /usr/local/etc/kube_config_cluster.yml \
-    create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
+    create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
 
   # https://github.com/kubernetes/dashboard/wiki/Access-control#admin-privileges
   kubectl --kubeconfig /usr/local/etc/kube_config_cluster.yml \
